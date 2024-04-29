@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yk w, wyk, LIC=14HV2-9UAME-LQC0Q-NADNC-3FT8C-M9IJP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  D:\keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Admin\Desktop\777\code\pro\code.uvprojx
+Project File Date:  04/11/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling HYFrame.c...
+..\bsp\driver\adc.h(7): warning:  #1-D: last line of file ends without a newline
+  extern __IO uint16_t ADCConvertedValue[100];
+..\bsp\4G\4GMain.h(370): warning:  #1295-D: Deprecated declaration _4G_SendFrameDispose - give arg types
+  uint8_t  _4G_SendFrameDispose();
+..\bsp\4G\4GMain.h(426): warning:  #1295-D: Deprecated declaration SIM7600Reset - give arg types
+  uint8_t SIM7600Reset();
+..\bsp\4G\4GMain.h(448): warning:  #1295-D: Deprecated declaration APP_GetSIM7600Status - give arg types
+  _4G_STATE APP_GetSIM7600Status();
+..\bsp\4G\HYFrame.c(800): warning:  #177-D: variable "Sendbuf"  was declared but never referenced
+      uint8_t Sendbuf[200] = {0};
+..\bsp\4G\HYFrame.c(901): warning:  #111-D: statement is unreachable
+      printf("hy_cmd_type_1102 send_over");
+..\bsp\4G\HYFrame.c(941): warning:  #177-D: variable "cTmp"  was declared but never referenced
+      unsigned char cTmp;
+..\bsp\4G\HYFrame.c(1021): warning:  #940-D: missing return statement at end of non-void function "HY_SendRegister" 
+  }
+..\bsp\4G\HYFrame.c(1101): warning:  #940-D: missing return statement at end of non-void function "HY_SendHear" 
+  }
+..\bsp\4G\HYFrame.c(1306): warning:  #177-D: variable "errcode"  was declared but never referenced
+      uint8_t errcode,i;			//故障�?
+..\bsp\4G\HYFrame.c(1306): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t errcode,i;			//故障�?
+..\bsp\4G\HYFrame.c(1438): warning:  #940-D: missing return statement at end of non-void function "_HY_RestUpdataData" 
+  }
+..\bsp\4G\HYFrame.c(1452): warning:  #177-D: variable "errcode"  was declared but never referenced
+      uint8_t errcode,i;			//故障�?
+..\bsp\4G\HYFrame.c(1452): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t errcode,i;			//故障�?
+..\bsp\4G\HYFrame.c(1599): warning:  #177-D: variable "datalen"  was declared but never referenced
+      uint16_t datalen;
+..\bsp\4G\HYFrame.c(1659): warning:  #177-D: variable "nowSysTime"  was declared but never referenced
+      static uint32_t nowSysTime = 0,lastSysTime = 0;
+..\bsp\4G\HYFrame.c(1659): warning:  #177-D: variable "lastSysTime"  was declared but never referenced
+      static uint32_t nowSysTime = 0,lastSysTime = 0;
+..\bsp\4G\HYFrame.c(1766): warning:  #177-D: variable "gun"  was declared but never referenced
+      uint8_t gun;
+..\bsp\4G\HYFrame.c(1908): warning:  #177-D: variable "times"  was declared but never referenced
+      uint8_t times = 3;							//如果设置失败反复设置三次
+..\bsp\4G\HYFrame.c(2003): warning:  #188-D: enumerated type mixed with another type
+      WriterFmBill(gun,0);
+..\bsp\4G\HYFrame.c(1727): warning:  #177-D: function "HY_RecvStartCharge"  was declared but never referenced
+  static uint8_t   HY_RecvStartCharge(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(1764): warning:  #177-D: function "HY_RecvStopCharge"  was declared but never referenced
+  static uint8_t   HY_RecvStopCharge(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(1799): warning:  #177-D: function "HY_RecvHearAck"  was declared but never referenced
+  static uint8_t   HY_RecvHearAck(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(1875): warning:  #177-D: function "HY_RecvDevInfoAck"  was declared but never referenced
+  static uint8_t   HY_RecvDevInfoAck(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(1905): warning:  #177-D: function "HY_RecvRegisterAck"  was declared but never referenced
+  static uint8_t   HY_RecvRegisterAck(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(1989): warning:  #177-D: function "HY_RecvRecordAck"  was declared but never referenced
+  static uint8_t   HY_RecvRecordAck(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2268): warning:  #177-D: function "HY_RecvRateSet"  was declared but never referenced
+  static uint8_t   HY_RecvRateSet(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2016): warning:  #177-D: function "HY_RecvDevStopAck"  was declared but never referenced
+  static uint8_t   HY_RecvDevStopAck(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2030): warning:  #177-D: function "HY_RecvDevFailAck"  was declared but never referenced
+  static uint8_t   HY_RecvDevFailAck(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2044): warning:  #177-D: function "HY_RecvQueryBill"  was declared but never referenced
+  static uint8_t   HY_RecvQueryBill(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2072): warning:  #177-D: function "HY_RecvQueryRate"  was declared but never referenced
+  static uint8_t   HY_RecvQueryRate(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2095): warning:  #177-D: function "HY_RecvCardStart"  was declared but never referenced
+  static uint8_t   HY_RecvCardStart(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2133): warning:  #177-D: function "HY_RecvUpdata"  was declared but never referenced
+  static uint8_t   HY_RecvUpdata(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c(2209): warning:  #177-D: function "HY_RecvReset"  was declared but never referenced
+  static uint8_t   HY_RecvReset(uint8_t *pdata,uint16_t len)
+..\bsp\4G\HYFrame.c: 34 warnings, 0 errors
+linking...
+Program Size: Code=77412 RO-data=2696 RW-data=1836 ZI-data=30460  
+FromELF: creating hex file...
+After Build - User command #2: fromelf --bin -o "C:\Users\Admin\Desktop\777\code\pro\Objects\code.bin" "C:\Users\Admin\Desktop\777\code\pro\Objects\code.axf"
+".\Objects\code.axf" - 0 Error(s), 34 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: ArteryTek
+                
+                ArteryTek.AT32F415_DFP.2.0.7
+                ArteryTek AT32F415 Series Device Support,Drivers
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\keil_v5\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\keil_v5\ArteryTek\AT32F415_DFP\2.0.7\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
